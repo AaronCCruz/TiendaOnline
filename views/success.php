@@ -1,6 +1,5 @@
 <?php
-    session_start();
-    require 'connection.php';
+    require 'database/connection.php';
     if(!isset($_SESSION['email'])){
         header('location:index.php');
     }else{
@@ -12,9 +11,7 @@
 ?>
 
         <div>
-            <?php
-                require 'header.php';
-            ?>
+
             <br>
             <div class="container">
                 <div class="row">
@@ -22,19 +19,11 @@
                         <div class="panel panel-primary">
                             <div class="panel-heading"></div>
                             <div class="panel-body">
-                                <p>Your order is confirmed. Thank you for shopping with us. <a href="products.php">Click here</a> to purchase any other item.</p>
+                                <p>Su oreden ha sido confirmada. <a href="?menu=productos">Click aqui</a> para hacer otra compra.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <footer class="footer">
-               <div class="container">
-                <center>
-                   <p>Copyright &copy <a href="https://projectworlds.in">Projectworlds</a> Store. All Rights Reserved.</p>
-                   <p>This website is developed by Yugesh Verma</p>
-               </center>
-               </div>
-           </footer>
         </div>
 

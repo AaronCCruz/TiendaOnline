@@ -5,7 +5,7 @@
                    <div id="bannerContent">
                        <h1>BIENVENIDO.</h1>
                        <p>Ya puedes hacer tus compras.</p>
-                       <a href="views/products.php" class="btn btn-danger">Comprar ahora</a>
+                       <a href="?menu=productos" class="btn btn-danger">Comprar ahora</a>
                    </div>
                    </center>
                </div>

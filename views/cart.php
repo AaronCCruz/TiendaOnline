@@ -46,7 +46,7 @@
                         </tr>
                        <?php $counter=$counter+1;}?>
                         <tr>
-                            <th></th><th>Total</th><th>Rs <?php echo $sum;?>/-</th><th><a href="success.php?id=<?php echo $user_id?>" class="btn btn-primary">Confirmar Orden</a></th>
+                            <th></th><th>Total</th><th>Rs <?php echo $sum;?>/-</th><th><a href="?menu=success&id=<?php echo $user_id?>" class="btn btn-primary">Confirmar Orden</a></th>
                         </tr>
                     </tbody>
                 </table>

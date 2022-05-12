@@ -14,7 +14,7 @@
 
                    <div class="col-xs-4">
                        <div  class="thumbnail">
-                           <a href="?menu=productClass">
+                           <a href="?menu=productClass&clave=1">
                                 <img src="img/cactus.jpg" alt="Cactus">
                            </a>
                            <center>
@@ -28,7 +28,7 @@
 
                    <div class="col-xs-4">
                        <div class="thumbnail">
-                           <a href="?menu=productClass">
+                           <a href="?menu=productClass&clave=2">
                                <img src="img/flores.jpg" alt="flores">
                            </a>
                            <center>
@@ -42,7 +42,7 @@
 
                    <div class="col-xs-4">
                        <div class="thumbnail">
-                           <a href="?menu=productClass">
+                           <a href="?menu=productClass&clave=3">
                                <img src="img/medicinales.jpg" alt="Medicinales">
                            </a>
                            <center>

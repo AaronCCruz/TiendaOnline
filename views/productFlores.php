@@ -2,7 +2,7 @@
     require './database/connection.php';
     require './model/check_if_added.php';
     
-    $class='cactus';
+    $class='flores';
     
     $sql_query = "SELECT * FROM `items` WHERE class='$class'; ";
     
@@ -21,7 +21,7 @@
                     <div class="col-md-3 col-sm-6">
                         <div class="thumbnail">
                             <a href="">
-                                <img src="./img/Cactus1.jpg" alt="Cactus">
+                                <img src="./img/rosaRoja.jpg" alt="Cactus">
                             </a>
                             <center>
                                 <div class="caption">
@@ -32,11 +32,11 @@
                                         <?php
                                         }
                                         else{
-                                            if(check_if_added_to_cart(1)){
+                                            if(check_if_added_to_cart(5)){
                                                 echo '<a href="#" class=btn btn-block btn-success disabled>Ya esta en tu carrito de compras</a>';
                                             }else{
                                                 ?>
-                                                <a href="?menu=agregarAlCarro&id=<?php echo $row['id']; ?>" class="btn btn-block btn-primary" name="add" value="add" class="btn btn-block btr-primary">Agregar al carrito</a>
+                                                <a href="?menu=agregarAlCarro&clave=2&id=<?php echo $row['id']; ?>" class="btn btn-block btn-primary" name="add" value="add" class="btn btn-block btr-primary">Agregar al carrito</a>
                                                 <?php
                                             }
                                         }
@@ -49,22 +49,22 @@
                     <div class="col-md-3 col-sm-6">
                         <div class="thumbnail">
                             <a href="">
-                                <img src="img/Cactus2.jpg" alt="cactus">
+                                <img src="img/RosaRosada.jpg" alt="cactus">
                             </a>
                             <center>
                                 <div class="caption">
-                                    <h3>Cactus 2</h3>
-                                    <p>Precio:  50.00</p>
+                                    <h3>Rosa Rosada</h3>
+                                    <p>Precio:  70.00</p>
                                     <?php if(!isset($_SESSION['email'])){  ?>
                                         <p><a href="?menu=login" role="button" class="btn btn-primary btn-block">Comprar Ahora</a></p>
                                         <?php
                                         }
                                         else{
-                                            if(check_if_added_to_cart(2)){
+                                            if(check_if_added_to_cart(6)){
                                                 echo '<a href="#" class=btn btn-block btn-success disabled>Ya esta en tu carrito de compras</a>';
                                             }else{
                                                 ?>
-                                                <a href="?menu=agregarAlCarro&id=2" class="btn btn-block btn-primary" name="add" value="add" class="btn btn-block btr-primary">Agregar al carrito</a>
+                                                <a href="?menu=agregarAlCarro&id=6&clave=2" class="btn btn-block btn-primary" name="add" value="add" class="btn btn-block btr-primary">Agregar al carrito</a>
                                                 <?php
                                             }
                                         }
@@ -76,22 +76,22 @@
                     <div class="col-md-3 col-sm-6">
                         <div class="thumbnail">
                             <a href="">
-                                <img src="img/Cactus3.jpeg" alt="cactus">
+                                <img src="img/hibiscusAmarillo.jpg" alt="cactus">
                             </a>
                             <center>
                                 <div class="caption">
-                                    <h3>Mickey</h3>
-                                    <p>Precio: 50</p>
+                                    <h3>Hibiscus</h3>
+                                    <p>Precio: 60</p>
                                     <?php if(!isset($_SESSION['email'])){  ?>
                                         <p><a href="?menu=login" role="button" class="btn btn-primary btn-block">Comprar Ahora</a></p>
                                         <?php
                                         }
                                         else{
-                                            if(check_if_added_to_cart(3)){
+                                            if(check_if_added_to_cart(7)){
                                                 echo '<a href="#" class=btn btn-block btn-success disabled>Ya esta en tu carrito de compras</a>';
                                             }else{
                                                 ?>
-                                                <a href="?menu=agregarAlCarro&id=3" class="btn btn-block btn-primary" name="add" value="add" class="btn btn-block btr-primary">Agregar al carrito</a>
+                                                <a href="?menu=agregarAlCarro&id=7&clave=2" class="btn btn-block btn-primary" name="add" value="add" class="btn btn-block btr-primary">Agregar al carrito</a>
                                                 <?php
                                             }
                                         }
@@ -103,22 +103,22 @@
                     <div class="col-md-3 col-sm-6">
                         <div class="thumbnail">
                             <a href="">
-                                <img src="img/Cactus4.jpg" alt="cactus">
+                                <img src="img/gardemia.jpg" alt="cactus">
                             </a>
                             <center>
                                 <div class="caption">
-                                    <h3>Cactus 4</h3>
-                                    <p>Precio: 56</p>
+                                    <h3>Gardemia</h3>
+                                    <p>Precio: 75</p>
                                     <?php if(!isset($_SESSION['email'])){  ?>
                                         <p><a href="?menu=login" role="button" class="btn btn-primary btn-block">Comprar ahora</a></p>
                                         <?php
                                         }
                                         else{
-                                            if(check_if_added_to_cart(4)){
+                                            if(check_if_added_to_cart(8)){
                                                 echo '<a href="#" class=btn btn-block btn-success disabled>Ya esta en tu carrito de compras</a>';
                                             }else{
                                                 ?>
-                                                <a href="?menu=agregarAlCarro&id=4" class="btn btn-block btn-primary " name="add" value="add" class="btn btn-block btr-primary">Agregar al carrito</a>
+                                                <a href="?menu=agregarAlCarro&id=8&clave=2" class="btn btn-block btn-primary " name="add" value="add" class="btn btn-block btr-primary">Agregar al carrito</a>
                                                 <?php
                                             }
                                         }

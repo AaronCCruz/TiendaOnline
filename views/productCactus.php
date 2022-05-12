@@ -36,7 +36,7 @@
                                                 echo '<a href="#" class=btn btn-block btn-success disabled>Ya esta en tu carrito de compras</a>';
                                             }else{
                                                 ?>
-                                                <a href="?menu=agregarAlCarro&id=<?php echo $row['id']; ?>" class="btn btn-block btn-primary" name="add" value="add" class="btn btn-block btr-primary">Agregar al carrito</a>
+                                                <a href="?menu=agregarAlCarro&clave=1&id=<?php echo $row['id']; ?>" class="btn btn-block btn-primary" name="add" value="add" class="btn btn-block btr-primary">Agregar al carrito</a>
                                                 <?php
                                             }
                                         }
@@ -64,7 +64,7 @@
                                                 echo '<a href="#" class=btn btn-block btn-success disabled>Ya esta en tu carrito de compras</a>';
                                             }else{
                                                 ?>
-                                                <a href="?menu=agregarAlCarro&id=2" class="btn btn-block btn-primary" name="add" value="add" class="btn btn-block btr-primary">Agregar al carrito</a>
+                                                <a href="?menu=agregarAlCarro&id=2&clave=1" class="btn btn-block btn-primary" name="add" value="add" class="btn btn-block btr-primary">Agregar al carrito</a>
                                                 <?php
                                             }
                                         }
@@ -91,7 +91,7 @@
                                                 echo '<a href="#" class=btn btn-block btn-success disabled>Ya esta en tu carrito de compras</a>';
                                             }else{
                                                 ?>
-                                                <a href="?menu=agregarAlCarro&id=3" class="btn btn-block btn-primary" name="add" value="add" class="btn btn-block btr-primary">Agregar al carrito</a>
+                                                <a href="?menu=agregarAlCarro&id=3&clave=1" class="btn btn-block btn-primary" name="add" value="add" class="btn btn-block btr-primary">Agregar al carrito</a>
                                                 <?php
                                             }
                                         }
@@ -118,7 +118,7 @@
                                                 echo '<a href="#" class=btn btn-block btn-success disabled>Ya esta en tu carrito de compras</a>';
                                             }else{
                                                 ?>
-                                                <a href="?menu=agregarAlCarro&id=4" class="btn btn-block btn-primary " name="add" value="add" class="btn btn-block btr-primary">Agregar al carrito</a>
+                                                <a href="?menu=agregarAlCarro&id=4&clave=1" class="btn btn-block btn-primary " name="add" value="add" class="btn btn-block btr-primary">Agregar al carrito</a>
                                                 <?php
                                             }
                                         }

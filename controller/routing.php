@@ -18,7 +18,17 @@ switch ($var_getMenu) {
         require_once('./views/products.php');
         break;
     case "productClass":
-        require_once('./views/productClass.php');
+        $_clave = trim(filter_input(INPUT_GET, 'clave'));
+        if($_clave==1){
+            require_once('./views/productCactus.php');
+        }
+        if($_clave==2){
+            require_once('./views/productFlores.php');
+        }
+        if($_clave==3){
+            require_once('./views/productMedicine.php');
+        }
+        
         break;
     case "login":
         require_once('./views/login.php');
@@ -34,14 +44,19 @@ switch ($var_getMenu) {
         break;
 
     case "agregarAlCarro":
+        $_clave = trim(filter_input(INPUT_GET, 'clave'));
         $_id = trim(filter_input(INPUT_GET, 'id'));
         require_once ('./model/cart_add.php');        
-        header("location: ./index.php?menu=productos");       
+        header("location: ./index.php?menu=productClass&clave=$_clave");       
         break;
     case "quitarDelCarro":
         $_id = trim(filter_input(INPUT_GET, 'id'));
         require_once ('./model/cart_remove.php');        
         header("location: ./index.php?menu=carro");       
+        break;
+    case "success":
+        $_id = trim(filter_input(INPUT_GET, 'id'));        
+        require_once ('./views/success.php');       
         break;
     case "carro":
         require_once('./views/cart.php');
