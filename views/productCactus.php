@@ -8,6 +8,8 @@
     
     $result=mysqli_query($con,$sql_query) or die(mysqli_error($con));
     $row = mysqli_fetch_array($result);
+
+    
 ?>
 
             <div class="container">
